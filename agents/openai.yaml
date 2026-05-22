@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Quote Normalizer"
+  short_description: "Convert English quotes to Chinese typography"
+  default_prompt: "Use $chinese-quote-normalizer to convert English straight quotes in this Markdown file to Chinese quote marks."
