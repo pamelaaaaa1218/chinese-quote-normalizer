@@ -19,23 +19,25 @@ Default to double quotes only. Preserve code syntax, Markdown structure, XML/HTM
 
 ## Local Markdown/Text Files
 
-Use the bundled script for local files:
+Use the bundled script for local files. Paths below are relative to this
+skill's own directory; run them from the skill folder, or prefix with the
+skill's absolute path on the current machine.
 
 ```bash
-python3 /Users/pamelahuang/.codex/skills/chinese-quote-normalizer/scripts/normalize_quotes.py --write <file-or-directory>
+python3 scripts/normalize_quotes.py --write <file-or-directory>
 ```
 
 Useful modes:
 
 ```bash
 # Preview only
-python3 /Users/pamelahuang/.codex/skills/chinese-quote-normalizer/scripts/normalize_quotes.py <file-or-directory>
+python3 scripts/normalize_quotes.py <file-or-directory>
 
 # Fail if changes would be needed
-python3 /Users/pamelahuang/.codex/skills/chinese-quote-normalizer/scripts/normalize_quotes.py --check <file-or-directory>
+python3 scripts/normalize_quotes.py --check <file-or-directory>
 
 # Also convert likely paired single quotes
-python3 /Users/pamelahuang/.codex/skills/chinese-quote-normalizer/scripts/normalize_quotes.py --write --single <file-or-directory>
+python3 scripts/normalize_quotes.py --write --single <file-or-directory>
 ```
 
 The script recursively processes Markdown-like files in directories (`.md`, `.markdown`, `.mdx`, `.txt`) and skips:
